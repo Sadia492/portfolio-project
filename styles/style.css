@@ -223,3 +223,74 @@ header {
   padding: 30px 0 20px 30px;
 }
 /* ------skill section ends here---- */
+/* ------resume section starts here---- */
+.resume-description {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 950px;
+  height: 368px;
+  margin: 0 auto;
+
+  width: 956px;
+  height: 720px;
+}
+.resume {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.summary {
+  text-align: center;
+  padding-bottom: 113px;
+}
+.resume-description p {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 30px;
+}
+.resume-description h1 {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.resume-description h3 {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 30px;
+}
+.resume-description h5 {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.resume-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+/* .btn {
+  text-align: center;
+  margin-right: 200px;
+} */
+
+/* ------resume section ends here---- */
