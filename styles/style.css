@@ -118,7 +118,7 @@ header {
 /* ------header section ends here---- */
 /* ------about section starts here---- */
 .about {
-  width: 1140px;
+  width: 80vw;
   height: 550px;
   border-radius: 10px;
   margin: 130px auto 130px auto;
@@ -188,7 +188,7 @@ header {
   height: 377px;
 
   border-radius: 5px;
-
+  margin-bottom: 130px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   background-color: rgb(255, 255, 255);
 }
@@ -224,69 +224,66 @@ header {
 }
 /* ------skill section ends here---- */
 /* ------resume section starts here---- */
-.resume-description {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  width: 950px;
-  height: 368px;
-  margin: 0 auto;
-
-  width: 956px;
-  height: 720px;
-}
-.resume {
-  margin-top: 130px;
-  margin-bottom: 130px;
-}
-.summary {
-  text-align: center;
-  padding-bottom: 113px;
-}
-.resume-description p {
-  color: rgb(117, 117, 117);
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0%;
-  text-align: left;
-  padding-bottom: 30px;
-}
-.resume-description h1 {
-  color: rgb(71, 71, 71);
-  font-family: Open Sans;
+.resume-column-title {
+  color: #474747;
   font-size: 30px;
   font-weight: 700;
-  line-height: 41px;
-  letter-spacing: 0%;
-  text-align: left;
 }
-.resume-description h3 {
-  color: rgb(71, 71, 71);
-  font-family: Open Sans;
+
+.resume-container {
+  display: flex;
+  gap: 50px;
+}
+
+.resume-item-title {
+  color: #474747;
   font-size: 25px;
   font-weight: 700;
-  line-height: 34px;
-  letter-spacing: 0%;
-  text-align: left;
-  padding-top: 30px;
+  margin-bottom: 10px;
 }
-.resume-description h5 {
-  color: rgb(117, 117, 117);
-  font-family: Open Sans;
+
+.resume-item-institute {
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.resume-item-institute,
+.resume-item-description {
+  color: #757575;
+}
+
+.resume-container hr {
+  margin: 30px;
+}
+
+.download-cv {
+  text-align: center;
+  margin-top: 50px;
+}
+.btn-primary {
+  border-radius: 5px;
+  background: #fd6e0a;
+  border: 0;
+  color: white;
   font-size: 20px;
-  font-weight: 600;
-  line-height: 27px;
-  letter-spacing: 0%;
-  text-align: left;
-  padding-bottom: 20px;
+  font-weight: 700;
+  padding: 15px 35px;
 }
-.resume-align {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
+.section-title {
+  color: #181818;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.section-description {
+  color: #757575;
+  text-align: center;
+  font-size: 18px;
+}
+.resume-container {
+  width: 80%;
+  margin: 80px auto 30px auto;
 }
 
 /* ------resume section ends here---- */
@@ -299,6 +296,7 @@ footer {
   width: 100%;
   height: 700px;
   gap: 117px;
+  margin-top: 130px;
 }
 .footer-description {
   padding-top: 100px;
@@ -365,3 +363,86 @@ footer {
   margin-right: 3px;
 }
 /* ------footer section ends here---- */
+.hide {
+  display: none;
+}
+/* smaller devices */
+@media screen and (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+  }
+  .banner-info {
+    flex-direction: column-reverse;
+    background-image: none;
+  }
+  .banner-container {
+    background-image: none;
+  }
+  .banner-image img {
+    width: 70%;
+  }
+  .banner-image {
+    background-image: url("../images/header_bg.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .nav ul {
+    padding-bottom: 50px;
+    margin-top: 20px;
+  }
+  .nav ul li {
+    padding-right: 10px;
+  }
+  .banner-description {
+    padding-left: 5px;
+  }
+  header {
+    height: 950px;
+  }
+  .about {
+    width: 95vw;
+    height: 900px;
+  }
+  .about-container {
+    height: 400px;
+  }
+  .about-description {
+    margin-bottom: 80px;
+  }
+  .about-info {
+    flex-direction: column;
+  }
+  .name,
+  .email,
+  .date,
+  .from {
+    padding-bottom: 10px;
+  }
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+  .resume-container {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+    gap: 0px;
+
+    width: 100vw;
+  }
+
+  .footer-input textarea,
+  .footer-input input {
+    width: 95%;
+  }
+
+  .footer-description {
+    width: 100%;
+    padding-left: 5px;
+  }
+}
+/* extra-small-devices
+@media screen and (max-width: 380px) {
+} */
